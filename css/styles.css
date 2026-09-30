@@ -1,0 +1,161 @@
+/* ==========================================
+   PALETA DE COLORES Y ESTILOS TORTAZA
+   Negro: #111111 / #1A1A1A
+   Amarillo: #FFC700 / #FFD700
+   Blanco: #FFFFFF
+   ========================================== */
+
+:root {
+  --tortaza-black: #111111;
+  --tortaza-dark: #1a1a1a;
+  --tortaza-yellow: #ffc700;
+  --tortaza-yellow-hover: #e0af00;
+  --tortaza-white: #ffffff;
+  --tortaza-gray: #f8f9fa;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--tortaza-gray);
+  color: #333;
+}
+
+/* --- HEADER / NAVBAR --- */
+.bg-tortaza-dark {
+  background-color: var(--tortaza-black) !important;
+}
+
+.navbar-brand span {
+  color: var(--tortaza-yellow);
+}
+
+.nav-link {
+  color: var(--tortaza-white) !important;
+  font-weight: 500;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--tortaza-yellow) !important;
+  transform: translateY(-2px);
+}
+
+.btn-tortaza-yellow {
+  background-color: var(--tortaza-yellow);
+  color: var(--tortaza-black);
+  font-weight: bold;
+  border-radius: 25px;
+  padding: 8px 22px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-tortaza-yellow:hover {
+  background-color: var(--tortaza-yellow-hover);
+  color: var(--tortaza-black);
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(255, 199, 0, 0.4);
+}
+
+/* --- CARRUSEL --- */
+.carousel-item {
+  height: 75vh;
+  min-height: 450px;
+  background: #000;
+}
+
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.65;
+}
+
+.carousel-caption {
+  bottom: 25%;
+  z-index: 10;
+}
+
+.carousel-caption h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--tortaza-white);
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+}
+
+.text-yellow {
+  color: var(--tortaza-yellow) !important;
+}
+
+/* --- SECCIONES Y TRANSICIONES --- */
+.section-padding {
+  padding: 80px 0;
+}
+
+/* Transición suave para las tarjetas y contenedores */
+.transition-card {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.transition-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15) !important;
+}
+
+/* Animación de zoom en imágenes */
+.img-hover-zoom {
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.img-hover-zoom img {
+  transition: transform 0.5s ease;
+}
+
+.img-hover-zoom:hover img {
+  transform: scale(1.08);
+}
+
+/* Borde amarillo decorativo */
+.border-yellow-left {
+  border-left: 5px solid var(--tortaza-yellow);
+  padding-left: 15px;
+}
+
+/* --- FOOTER --- */
+footer {
+  background-color: var(--tortaza-black);
+  color: var(--tortaza-white);
+}
+
+footer a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--tortaza-yellow);
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--tortaza-dark);
+  color: var(--tortaza-yellow);
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background: var(--tortaza-yellow);
+  color: var(--tortaza-black);
+  transform: translateY(-3px);
+}
